@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>@Keyframe Animation</title>
+	<style>
+		/* style for div element */
+		div.animate{
+			width:50px;
+			height: 50px;
+			color: white;
+			padding: 12px;
+			background: blue;
+			position: relative;
+		}
+		/*which kind of styles with name and duration*/
+		#test1{
+			animation-name: boxmove ;
+			animation-duration: 2s ;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes boxmove {
+			from {left :10px;}
+			to {right :210px;}
+		}
+	</style>
+		   
+</head>
+	
+
+<body>
+	<h2>@Keyframe Demo</h2>
+	<hr/>
+	<div id="test1" class="animate">Linear</div>
+</body>
+
+</html>

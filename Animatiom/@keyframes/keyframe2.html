@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>keyframes Demo</title>
+		<style>
+			div{
+				border:1px solid green;
+				width: 100%;
+				height: 800px;
+			}
+			#img1{
+				width: 200px;
+				height: 200px;
+				border: 1px solid blue;
+				animation-name: moveimage ;
+				animation-duration: 5s ;
+				animation-iteration-count: infinite;
+				position: relative;
+			}
+			@keyframes moveimage {
+				from{left : 0px;right:1150px;transform: rotate(0deg)}
+				to {left :1150px;right:0px;transform: rotate(360deg)}
+			}
+			
+			#img2{
+				width: 200px;
+				height: 200px;
+				border: 1px solid blue;
+				animation-name: moveimage2 ;
+				animation-duration: 5s ;
+				animation-iteration-count: infinite;
+				position: absolute;
+				z-index: 1;
+			}
+			@keyframes moveimage2 {
+				from{top : 0px;bottom: 890px; transform: rotate(0deg)}
+				to {top :890px;bottom: 0px;transform: rotate(360deg)}
+			}
+			
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<img id="img1" src="1.jpg"/>
+			<img id="img2" src="1.jpg"/>
+		</div>
+	</body>
+</html>
