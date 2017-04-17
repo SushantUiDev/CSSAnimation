@@ -1,0 +1,38 @@
+<html>
+
+<head>
+	<title>Aniamtion Demo</title>
+	<link href="graph.css" rel="stylesheet" type="text/css" />
+	<script>
+		function f1(){
+			var div1=document.getElementById("div01");
+			div1.style.width=400;
+		}
+		function f2(){
+			var div1=document.getElementById("div02");
+			div1.style.width=400;
+		}
+		function f3(){
+			var div1=document.getElementById("div03");
+			div1.style.width=400;
+		}
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="firstDiv">
+
+		</div><br>
+		<p>
+			<button id="btn_01" name="btn_01" value="showGraph"  onclick="f1()" onclick="f2()" onclick="f3()">Click Me</button>
+		</p>
+		<div class="secondDiv">
+			<div id="div01" class="c1"></div>
+			<div id="div02" class="c1"></div>
+			<div id="div03" class="c1"></div>
+		</div>
+	</div>
+</body>
+
+</html>

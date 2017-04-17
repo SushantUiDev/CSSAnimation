@@ -1,0 +1,87 @@
+.wrapper {
+	width: 600px;
+	height: 600px;
+	border: 1px solid blue;
+}
+
+#firstDiv {
+	border: 1px solid red;
+	width: 100px;
+	height: 100px;
+	background-color: aquamarine;
+	position: relative;
+	animation: move 5s forwards;
+	animation-delay: 1s;
+}
+
+@keyframes move {
+	0% {
+		left: 0
+	}
+	100% {
+		left: 500
+	}
+}
+
+#btn_01 {
+	opacity: 0;
+	margin-left: 500px;
+	position: relative;
+	animation: movebtn 5s forwards;
+	animation-delay: 1s;
+}
+
+@keyframes movebtn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.secondDiv{
+	border: 1px solid blue;
+	background-color: gray;
+	widows: 400px;
+	height: 400px;
+	opacity: 0;
+	position: relative;
+	animation: display 5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes display {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+#div01{
+	margin-top: 50px;
+	height: 50px;
+	width: 300;
+	position: absolute;
+	transition:width 2s;
+	background-color: chartreuse;
+}
+#div02{
+	margin-top: 150px;
+	height: 50px;
+	width: 350;
+	transition:width 2s;
+	position: absolute;
+	background-color:blue;
+}
+#div03{
+	margin-top: 250px;
+	height: 50px;
+	width: 400;
+	transition:width 2s;
+	position: absolute;
+	background-color:red;
+}
